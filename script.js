@@ -30,49 +30,29 @@ const cardsData = [
 function createCard(card) {
     const cardElement = document.createElement('div');
     cardElement.classList.add('card');
-
-    const imageElement = document.createElement('img');
-    imageElement.src = card.image;
-    imageElement.alt = card.title;
-    imageElement.classList.add('card-image');
-
-    const contentElement = document.createElement('div');
-    contentElement.classList.add('card-content');
-
-    const titleElement = document.createElement('h2');
-    titleElement.classList.add('card-title');
-    titleElement.textContent = card.title;
-
-    const lastViewedElement = document.createElement('p');
-    lastViewedElement.classList.add('card-last-viewed');
-    lastViewedElement.textContent = `Last viewed: ${card.lastViewed}`;
-
-    contentElement.appendChild(titleElement);
-    contentElement.appendChild(lastViewedElement);
-    cardElement.appendChild(imageElement);
-    cardElement.appendChild(contentElement);
-
+    cardElement.innerHTML = `
+        <img src="${card.image}" alt="${card.title}" class="card-image">
+        <div class="card-content">
+            <h2 class="card-title">${card.title}</h2>
+            <p class="card-last-viewed">Last viewed: ${card.lastViewed}</p>
+        </div>
+    `;
     return cardElement;
 }
 
 // Function to render cards
 function renderCards() {
-    const cardsGrid = document.querySelector('.cards-grid');
+    const cardsGrid = document.getElementById('cardsGrid');
+    cardsGrid.innerHTML = ''; // Clear existing cards
     cardsData.forEach(card => {
         const cardElement = createCard(card);
         cardsGrid.appendChild(cardElement);
     });
 }
 
-// Render cards on page load
-renderCards();
-
-// Initialize lucide icons
-lucide.createIcons();
-
-// User Profile Data (replace with actual user data)
+// User Profile Data
 const user = {
-    avatar: "S", // You can replace this with an image URL later
+    avatar: "S", // Replace with image URL or text
     name: "THE GREAT SOVEREIGN",
     plan: "FREE",
 };
@@ -116,3 +96,14 @@ window.addEventListener("click", (event) => {
         hidePopup();
     }
 });
+
+// Presentation Form Logic (Now handled in create_presentation.js)
+const createNewButton = document.getElementById('createNewButton');
+
+createNewButton.addEventListener('click', () => {
+    window.location.href = 'create_presentation.html';
+});
+
+// Initialize lucide icons and render cards on load
+lucide.createIcons();
+renderCards();

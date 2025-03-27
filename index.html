@@ -6,8 +6,7 @@
     <title>PresentX Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body>
+    <script src="script.js" defer></script> </head> <body>
     <div class="container">
         <!-- Sidebar -->
         <aside class="sidebar">
@@ -57,7 +56,6 @@
                         <i data-lucide="plus" class="folders-add-icon"></i>
                     </button>
                 </div>
-
             </div>
 
             <!-- Bottom Menu -->
@@ -91,17 +89,17 @@
             <div class="main-header">
                 <h1 class="main-title">PresentX</h1>
                 <div class="main-actions">
-                    <button class="create-new">
+                    <button class="create-new" id="createNewButton">
                         <i data-lucide="plus" class="create-new-icon"></i>
                         Create New
                     </button>
                     <i data-lucide="bell" class="notification-icon"></i>
-                    <div class="user-avatar"></div>
+                    <div class="user-avatar" id="user-avatar"></div>
                 </div>
             </div>
 
             <!-- Cards Grid -->
-            <div class="cards-grid">
+            <div class="cards-grid" id="cardsGrid">
                 <!-- Cards will be added here -->
             </div>
         </main>
@@ -114,7 +112,4 @@
             <p id="popup-message">This part is being developed rn, stay tuned for more awesome features!</p>
         </div>
     </div>
-
-    <script src="script.js"></script>
-</body>
 </html>

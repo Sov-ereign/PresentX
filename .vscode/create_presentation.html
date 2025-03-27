@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Presentation</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link your CSS -->
+    <script src="create_presentation.js" defer></script> </head>
+<body>
+    <div class="create-presentation-container">
+        <h1>Create New Presentation</h1>
+        <form id="presentationForm">
+            <label for="title">Presentation Title:</label>
+            <input type="text" id="title" name="title" required><br><br>
+
+            <div id="slidesContainer">
+                <div class="slide">
+                    <label>Slide Title:</label>
+                    <input type="text" class="slideTitle">
+                    <ul class="bulletPoints">
+                        <li><input type="text" class="bulletPoint"></li>
+                    </ul>
+                    <button type="button" class="addBulletPoint">Add Bullet Point</button>
+                    <button type="button" class="removeSlide">Remove Slide</button>
+                </div>
+            </div>
+
+            <button type="button" id="addSlide">Add Slide</button><br><br>
+            <button type="submit">Generate Presentation</button>
+        </form>
+    </div>
+</body>
+</html>
