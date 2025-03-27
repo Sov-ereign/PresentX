@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gammas Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Profile -->
+            <div class="profile">
+                <div class="profile-info">
+                    <div class="profile-avatar" id="user-avatar"></div>
+                    <div class="profile-details">
+                        <p class="profile-name" id="user-name"></p>
+                        <p class="profile-plan" id="user-plan"></p>
+                    </div>
+                </div>
+                <i data-lucide="chevron-down" class="profile-dropdown"></i>
+            </div>
+
+            <!-- Search -->
+            <div class="search">
+                <i data-lucide="search" class="search-icon"></i>
+                <input type="text" placeholder="Search..." class="search-input">
+            </div>
+
+            <!-- Navigation -->
+            <div class="sidebar-nav">
+                <div class="sidebar-item active">
+                    <i data-lucide="file-text" class="sidebar-icon"></i>
+                    <span class="sidebar-text">Gammas</span>
+                </div>
+                <div class="sidebar-item" data-popup="true">
+                    <i data-lucide="users" class="sidebar-icon"></i>
+                    <span class="sidebar-text">Shared with you</span>
+                </div>
+                <div class="sidebar-item" data-popup="true">
+                    <i data-lucide="globe" class="sidebar-icon"></i>
+                    <span class="sidebar-text">Sites</span>
+                </div>
+                <div class="sidebar-item" data-popup="true">
+                    <i data-lucide="image" class="sidebar-icon"></i>
+                    <span class="sidebar-text">AI Images</span>
+                </div>
+            </div>
+
+            <!-- Folders -->
+            <div class="folders">
+                <div class="folders-header">
+                    <p class="folders-title">Folders</p>
+                    <button class="folders-add">
+                        <i data-lucide="plus" class="folders-add-icon"></i>
+                    </button>
+                </div>
+                <p class="folders-description">Organize your gammas by topic.</p>
+                <button class="folders-create">Create a folder</button>
+            </div>
+
+            <!-- Bottom Menu -->
+            <div class="bottom-menu">
+                <div class="sidebar-item" data-popup="true">
+                    <i data-lucide="zap" class="sidebar-icon"></i>
+                    <span class="sidebar-text">Templates</span>
+                </div>
+                <div class="sidebar-item" data-popup="true">
+                    <i data-lucide="lightbulb" class="sidebar-icon"></i>
+                    <span class="sidebar-text">Inspiration</span>
+                </div>
+                <div class="sidebar-item" data-popup="true">
+                    <i data-lucide="palette" class="sidebar-icon"></i>
+                    <span class="sidebar-text">Themes</span>
+                </div>
+                <div class="sidebar-item" data-popup="true">
+                    <i data-lucide="type" class="sidebar-icon"></i>
+                    <span class="sidebar-text">Custom fonts</span>
+                </div>
+                <div class="sidebar-item" data-popup="true">
+                    <i data-lucide="trash-2" class="sidebar-icon"></i>
+                    <span class="sidebar-text">Trash</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <div class="main-header">
+                <h1 class="main-title">Gammas</h1>
+                <div class="main-actions">
+                    <button class="create-new">
+                        <i data-lucide="plus" class="create-new-icon"></i>
+                        Create New
+                    </button>
+                    <i data-lucide="bell" class="notification-icon"></i>
+                    <div class="user-avatar"></div>
+                </div>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="cards-grid">
+                <!-- Cards will be added here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <p id="popup-message">This part is being developed rn, stay tuned for more awesome features!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
