@@ -2,7 +2,8 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: #f7f7f7;
+    color: #ff0000;
+    background-color: #000000;
     display: flex;
     min-height: 100vh;
 }
@@ -16,8 +17,8 @@ body {
 /* Sidebar */
 .sidebar {
     width: 256px;
-    border-right: 1px solid #e0e0e0;
-    background-color: #fff;
+    border-right: 1px solid #73ff00;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     padding: 16px;
@@ -40,8 +41,8 @@ body {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background-color: #9333ea;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -54,13 +55,14 @@ body {
 
 .profile-name {
     font-size: 14px;
+    color: #000000;
     font-weight: bold;
     margin: 0;
 }
 
 .profile-plan {
     font-size: 12px;
-    color: #71717a;
+    color: #290128;
     margin: 0;
 }
 
@@ -72,14 +74,14 @@ body {
 .search {
     display: flex;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color: #000000;
     padding: 8px 12px;
     border-radius: 6px;
     margin-bottom: 16px;
 }
 
 .search-icon {
-    color: #71717a;
+    color: #ffffff;
     width: 16px;
     height: 16px;
 }
@@ -114,7 +116,7 @@ body {
 
 .sidebar-item.active {
     background-color: #f5e7ff;
-    color: #7e22ce;
+    color: #ff0000;
 }
 
 .sidebar-icon {
@@ -166,7 +168,7 @@ body {
 
 .folders-create {
     font-size: 14px;
-    color: #7e22ce;
+    color: #ff0000;
     font-weight: 500;
     border: none;
     background: none;
@@ -209,7 +211,7 @@ body {
 
 .create-new {
     padding: 8px 16px;
-    background-color: #7e22ce;
+    background-color: #cc0707;
     color: #fff;
     border-radius: 6px;
     display: flex;
@@ -230,12 +232,6 @@ body {
     height: 20px;
 }
 
-.user-avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background-color: #d4d4d4;
-}
 
 /* Cards Grid */
 .cards-grid {
@@ -248,13 +244,13 @@ body {
 .card {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgb(255, 255, 255);
     overflow: hidden;
     transition: box-shadow 0.2s;
 }
 
 .card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
 }
 
 .card-image {
@@ -303,7 +299,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
 }
 
 .popup-content {

@@ -1,0 +1,383 @@
+/* Simplified create_presentation.css */
+
+/* General Container */
+.create-presentation-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+body {
+  background-color: #000000; /* Light gray */
+}
+
+/* Headings */
+.create-presentation-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.create-presentation-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.64);
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+/* Buttons */
+button {
+    border: 0.8px solid;
+    border-radius: 6px;
+    padding: 12px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    min-width: 112px;
+    transition: 0.3s;
+}
+
+/* Generate button */
+button.bg-blue-500 {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border-color: rgb(51, 0, 217);
+}
+
+button.bg-[rgb(234,231,255)] {
+    background-color: rgb(234, 231, 255);
+    color: rgb(26, 6, 153);
+    border-color: rgb(128, 90, 213);
+}
+
+button.bg-white {
+    background-color: white;
+    color: rgb(60, 56, 56);
+    border-color: rgb(229, 224, 223);
+}
+
+button.bg-gray-300 {
+    background-color: rgb(229, 224, 223);
+    color: rgb(60, 56, 56);
+    border-color: rgb(229, 224, 223);
+}
+
+/* Textarea */
+textarea {
+  background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);
+  border: 0px none rgb(53, 100, 145);
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  line-height: 24.75px;
+  overflow: hidden;
+  resize: none;
+  color: rgb(60, 56, 56);
+  padding: 20px;
+  appearance: none;
+  border-radius: 6px;
+  font-weight: 500;
+  height: 65px;
+  min-height: 16px;
+  min-width: 0px;
+  outline: rgba(0, 0, 0, 0) solid 1.6px;
+  outline-offset: 2px;
+  padding-inline: 20px;
+  position: relative;
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  vertical-align: top;
+  width: 736px;
+  text-align: start;
+
+}
+
+/* SVG */
+svg {
+    height: 20px;
+    vertical-align: -2.5px;
+}
+
+/* Flexbox Utilities */
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+/* Spacing Utilities */
+.gap-2 {
+    gap: 4px;
+}
+
+.gap-4 {
+    gap: 8px;
+}
+
+.gap-8 {
+    gap: 16px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-8 {
+    margin-bottom: 16px;
+}
+
+.mt-8 {
+    margin-top: 16px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.ml-8 {
+    margin-left: 8px;
+}
+
+.mr-0 {
+    margin-right: 0;
+}
+
+.my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-2 {
+    padding: 8px;
+}
+
+.p-4 {
+    padding: 12px;
+}
+
+.px-4 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.px-6 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.py-2 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.py-4 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* Text Utilities */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.text-gray-600 {
+    color: rgba(0, 0, 0, 0.64);
+}
+
+.text-gray-700 {
+    color: rgb(60, 56, 56);
+}
+
+.text-blue-700 {
+    color: rgb(255, 0, 0);
+}
+
+.text-blue-500 {
+    color: rgb(255, 0, 0);
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-4xl {
+    font-size: 48px;
+}
+
+.text-xl {
+    font-size: 20px;
+}
+
+.text-lg {
+    font-size: 18px;
+}
+
+.whitespace-nowrap {
+    white-space: nowrap;
+}
+
+/* Border Utilities */
+.border-0 {
+    border: none;
+}
+
+.border-solid {
+    border-style: solid;
+}
+
+.border-[0.8px] {
+    border-width: 0.8px;
+}
+
+.border-[1.6px] {
+    border-width: 1.6px;
+}
+
+.border-gray-300 {
+    border-color: #d4d4d4;
+}
+
+.border-blue-500 {
+    border-color: rgb(255, 0, 0);
+}
+
+.border-[rgba(0,0,0,0)] {
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.border-[rgb(229,224,223)] {
+    border-color: rgb(229, 224, 223);
+}
+
+.border-[rgb(128,90,213)] {
+    border-color: rgb(128, 90, 213);
+}
+
+.border-[rgb(51,0,217)] {
+    border-color: rgb(51, 0, 217);
+}
+
+/* Rounded Corners */
+.rounded-none {
+    border-radius: 0;
+}
+
+.rounded-lg {
+    border-radius: 8px;
+}
+
+.rounded-[6px] {
+    border-radius: 6px;
+}
+
+.rounded-[8px] {
+    border-radius: 8px;
+}
+
+/* Shadow Utilities */
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover Effects */
+.hover\:shadow-lg:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.hover\:bg-gray-400:hover {
+    background-color: #d4d4d4;
+}
+
+.hover\:bg-blue-600:hover {
+    background-color: #ff0000;
+}
+
+/* Width and Height */
+.w-full {
+    width: 100%;
+}
+
+/* Opacity */
+.opacity-40 {
+    opacity: 0.4;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+/* Fill */
+.fill-[rgb(128,108,255)] {
+    fill: rgb(128, 108, 255);
+}
+
+.fill-[rgb(60,56,56)] {
+    fill: rgb(60, 56, 56);
+}
+
+.fill-currentColor {
+    fill: currentColor;
+}

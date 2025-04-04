@@ -52,9 +52,9 @@ function renderCards() {
 
 // User Profile Data
 const user = {
-    avatar: "S", // Replace with image URL or text
-    name: "THE GREAT SOVEREIGN",
-    plan: "FREE",
+    avatar: "۞", // Replace with image URL or text
+    name: "SOVEREIGN",
+    plan: "Owner",
 };
 
 // Update user profile
